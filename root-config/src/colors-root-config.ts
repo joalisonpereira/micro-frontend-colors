@@ -1,6 +1,12 @@
 import { registerApplication, start, LifeCycles } from "single-spa";
 
 registerApplication({
+  name: "@colors/navbar",
+  app: () => System.import<LifeCycles>("@colors/navbar"),
+  activeWhen: () => true,
+});
+
+registerApplication({
   name: "@single-spa/welcome",
   app: () =>
     System.import<LifeCycles>(
