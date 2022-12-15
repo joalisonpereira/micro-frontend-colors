@@ -1,0 +1,11 @@
+{
+  "imports": {
+    "@single-spa/welcome": "https://unpkg.com/single-spa-welcome/dist/single-spa-welcome.js",
+    "@colors/root-config": "https://raw.githubusercontent.com/joalisonpereira/micro-frontend-colors/master/root-config/dist/colors-root-config.js",
+    "@colors/boxes": "https://raw.githubusercontent.com/joalisonpereira/micro-frontend-colors/master/boxes/dist/colors-boxes.js",
+    "@colors/blue": "https://raw.githubusercontent.com/joalisonpereira/micro-frontend-colors/master/blue/dist/colors-blue.js",
+    "@colors/gold": "https://raw.githubusercontent.com/joalisonpereira/micro-frontend-colors/master/gold/dist/colors-gold.js",
+    "@colors/utils": "https://raw.githubusercontent.com/joalisonpereira/micro-frontend-colors/master/utils/dist/colors-utils.js",
+    "@colors/navbar": "https://raw.githubusercontent.com/joalisonpereira/micro-frontend-colors/master/navbar/dist/colors-navbar.js"
+  }
+}

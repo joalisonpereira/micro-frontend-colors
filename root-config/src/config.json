@@ -1,0 +1,30 @@
+{
+  "applications": [
+    {
+      "name": "@colors/navbar",
+      "package": "@colors/navbar",
+      "activeWhen": true
+    },
+    {
+      "name": "@colors/boxes",
+      "package": "@colors/boxes",
+      "activeWhen": "/"
+    },
+    {
+      "name": "@colors/blue",
+      "package": "@colors/blue",
+      "activeWhen": "/blue"
+    },
+    {
+      "name": "@colors/gold",
+      "package": "@colors/gold",
+      "activeWhen": "/gold",
+      "exact": true
+    },
+    {
+      "name": "@single-spa/welcome",
+      "package": "https://unpkg.com/single-spa-welcome/dist/single-spa-welcome.js",
+      "activeWhen": "/welcome"
+    }
+  ]
+}
