@@ -10,7 +10,8 @@ config.applications.forEach((item) => {
       : (location) =>
           item.activeWhen === true
             ? true
-            : location.pathname === item.activeWhen,
+            : location.pathname.replace("/micro-frontend-colors/", "") ===
+              item.activeWhen,
   });
 });
 
