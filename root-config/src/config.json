@@ -18,7 +18,7 @@
     {
       "name": "@colors/gold",
       "package": "@colors/gold",
-      "activeWhen": "/gold",
+      "activeWhen": ["/gold"],
       "exact": true
     },
     {
