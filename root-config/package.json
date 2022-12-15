@@ -8,7 +8,8 @@
     "check-format": "prettier --check .",
     "build": "concurrently npm:build:*",
     "build:webpack": "webpack --mode=production",
-    "build:types": "tsc"
+    "build:types": "tsc",
+    "gh-push": "git subtree push --prefix dist origin gh-pages"
   },
   "devDependencies": {
     "@babel/core": "^7.15.0",

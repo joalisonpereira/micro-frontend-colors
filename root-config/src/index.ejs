@@ -67,10 +67,19 @@
       }
     </script>
     <% } else { %>
-    <script
-      type="systemjs-importmap"
-      src="https://raw.githubusercontent.com/joalisonpereira/micro-frontend-colors/master/root-config/src/import-map.json"
-    ></script>
+    <script type="systemjs-importmap">
+      {
+        "imports": {
+          "@single-spa/welcome": "https://unpkg.com/single-spa-welcome/dist/single-spa-welcome.js",
+          "@colors/root-config": "https://joalison-pereira-s3.s3.amazonaws.com/micro-frontend-colors/root-config/colors-root-config.js",
+          "@colors/boxes": "https://joalison-pereira-s3.s3.amazonaws.com/micro-frontend-colors/boxes/colors-boxes.js",
+          "@colors/blue": "https://joalison-pereira-s3.s3.amazonaws.com/micro-frontend-colors/blue/colors-blue.js",
+          "@colors/gold": "https://joalison-pereira-s3.s3.amazonaws.com/micro-frontend-colors/gold/colors-gold.js",
+          "@colors/utils": "https://joalison-pereira-s3.s3.amazonaws.com/micro-frontend-colors/utils/colors-utils.js",
+          "@colors/navbar": "https://joalison-pereira-s3.s3.amazonaws.com/micro-frontend-colors/navbar/colors-navbar.js"
+        }
+      }
+    </script>
     <% } %>
 
     <!--
