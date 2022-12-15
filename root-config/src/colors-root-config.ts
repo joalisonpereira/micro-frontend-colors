@@ -7,11 +7,8 @@ registerApplication({
 });
 
 registerApplication({
-  name: "@single-spa/welcome",
-  app: () =>
-    System.import<LifeCycles>(
-      "https://unpkg.com/single-spa-welcome/dist/single-spa-welcome.js"
-    ),
+  name: "@colors/boxes",
+  app: () => System.import<LifeCycles>("@colors/boxes"),
   activeWhen: (location) => location.pathname === "/",
 });
 
@@ -25,6 +22,12 @@ registerApplication({
   name: "@colors/gold",
   app: () => System.import<LifeCycles>("@colors/gold"),
   activeWhen: ["/gold"],
+});
+
+registerApplication({
+  name: "@single-spa/welcome",
+  app: () => System.import<LifeCycles>("@single-spa/welcome"),
+  activeWhen: (location) => location.pathname === "/welcome",
 });
 
 start({ urlRerouteOnly: true });

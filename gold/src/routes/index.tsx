@@ -6,6 +6,8 @@ function Routes() {
     <BrowserRouter basename="gold">
       <Switch>
         <Route path="/" element={<Home />} />
+
+        <Route path="*" element={<div>Not found</div>} />
       </Switch>
     </BrowserRouter>
   );

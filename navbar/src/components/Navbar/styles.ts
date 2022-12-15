@@ -3,7 +3,7 @@ import styled from "styled-components";
 export interface ContainerProps {}
 
 export const Container = styled.nav<ContainerProps>`
-  background-color: #01f;
+  background-color: rgba(231, 109, 137, 1);
   position: fixed;
   top: 0;
   left: 0;
